@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     slider.addEventListener('input', () => {
 
-        const sliderValue = slider.value;
+        const temperature = slider.value;
 
         //Display temperature
-        tempOutput.textContent = slider.value;
+        tempOutput.textContent = temperature;
 
         //Display emoji
-        if (sliderValue >= 0 && sliderValue <= 8) {
+        if (temperature >= 0 && temperature <= 8) {
             emoji.textContent = '🥶';
-        } else if (sliderValue > 8 && sliderValue <= 16) {
+        } else if (temperature > 8 && temperature <= 16) {
             emoji.textContent = '😬';
-        } else if (sliderValue > 16 && sliderValue <= 24) {
+        } else if (temperature > 16 && temperature <= 24) {
             emoji.textContent = '😊';
-        } else if (sliderValue > 24 && sliderValue <= 32) {
+        } else if (temperature > 24 && temperature <= 32) {
             emoji.textContent = '😅';
         } else {
             emoji.textContent = '🥵';
